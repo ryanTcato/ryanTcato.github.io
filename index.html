@@ -1,111 +1,115 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Ryan Town, USA </title>
-        <style> 
-         body {
-       background: rgb(201, 165, 221);
-       color: rgb(45, 45, 45);
-       padding: 10px;
-       font-family: arial;
-       border-radius: 10px 10px;
-   }
-   #all-contents {
-     max-width: 800px;
-       margin: auto;
-   }
+  <head>
+    <title>Ryan Town, USA</title>
+    <style>
+      body {
+        background: rgb(201, 165, 221);
+        color: rgb(45, 45, 45);
+        padding: 10px;
+        font-family: arial;
+        border-radius: 10px 10px;
+        background-image: url("https://wallpaperaccess.com/full/477954.jpg");
+        background-size: cover;
+      }
+      #all-contents {
+        max-width: 800px;
+        margin: auto;
+      }
 
-   /* navigation menu */
-   nav {
-       background: rgb(41, 91, 239);
-      margin: 0 auto;
-      margin-bottom: 20px;
-       display: flex;
-       padding: 10px;
-       border-radius: 10px 10px;
-   }
-   h1 {
-       display: flex;
-       align-items: center;
-       color: white;
-       flex: 1;
-       margin: 0;
-   }
-   #nav-ul {
-       list-style-image: none;
-   }
-   .nav-li {
-       display: inline-block;
-       padding: 0 10px;
-   }
-   a {
-       text-decoration: none;
-       color: #fff;
-   }
+      /* navigation menu */
+      nav {
+        background: rgb(41, 91, 239);
+        margin: 0 auto;
+        margin-bottom: 20px;
+        display: flex;
+        padding: 10px;
+        border-radius: 10px 10px;
+      }
+      h1 {
+        display: flex;
+        align-items: center;
+        color: white;
+        flex: 1;
+        margin: 0;
+      }
+      #nav-ul {
+        list-style-image: none;
+      }
+      .nav-li {
+        display: inline-block;
+        padding: 0 10px;
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
 
-   /* main container area beneath menu */
-   main {
-       background: rgb(155, 156, 174);
-       display: flex;
-       border-radius: 10px;
-   }
-   .sidebar {
-       margin-right: 25px;
-       padding: 10px;
-   }
-   .sidebar-img {
-       width: 200px;
-       border: 3px purple dashed;
-    
-   }
-   .content {
-       flex: 1;
-       padding: 15px;
-   }
-   #interests {
-       border: 4px rgb(5, 8, 12) ridge;
-       padding: 8px;
-   }
-   h2, h3 {
-       margin: 0px;
-   }
-        </style>
-    </head>
-    <body>
-        <!--Visible Content Here-->
-        <div>
-            <nav> 
-                <h1> RyanTown </h1>
-                <ul>
-                    <li class="nav-li"> 
-                        <a href="index.html"> Home </a>
-                    </li>
-                    <li class="nav-li">
-                        <a href="portfolio.html"> Portfolio </a>
-                    </li>
-                </ul>
-            </nav>
-            <main>
-                <!--Sidebar--> 
-                <div class="sidebar"> 
-                    <img class="sidebar-img" src="data:image/jpeg;base64,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">
-                </div>
-                <!--Content-->
-                <div id="all-contents" class="content"> 
-                    <h2> Ryan Cato </h2>
-                    <p> Student at Mandeville High School 
-                    <!--Interests Section-->
-                    <div>
-                        <h3> Interests </h3>
-                        <ul id="nav-ul">
-                            <li> Singing </li>
-                            <li> Acting </li>
-                            <li> Video Games </li>
-                        </ul>
-                    </div>
-                    </p>
-                </div>
-            </main>
+      /* main container area beneath menu */
+      main {
+        background: rgb(155, 156, 174);
+        display: flex;
+        border-radius: 10px;
+      }
+      .sidebar {
+        margin-right: 25px;
+        padding: 10px;
+      }
+      .sidebar-img {
+        width: 200px;
+        border: 3px purple dashed;
+      }
+      .content {
+        flex: 1;
+        padding: 15px;
+      }
+      #interests {
+        border: 4px rgb(5, 8, 12) ridge;
+        padding: 8px;
+      }
+      h2,
+      h3 {
+        margin: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Visible Content Here-->
+    <div>
+      <nav>
+        <h1>RyanTown</h1>
+        <ul>
+          <li class="nav-li">
+            <a href="index.html"> Home </a>
+          </li>
+          <li class="nav-li">
+            <a href="portfolio.html"> Portfolio </a>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <!--Sidebar-->
+        <div class="sidebar">
+          <img
+            class="sidebar-img"
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6b/American_Beaver.jpg"
+          />
         </div>
-    </body>
+        <!--Content-->
+        <div id="all-contents" class="content">
+          <h2>Ryan Cato</h2>
+          <p> Singer, Actor, and Beaver Enthusiast</p>
+          <!--Interests Section-->
+          <div>
+            <h3>Interests</h3>
+            <ul id="nav-ul">
+              <li>Singing</li>
+              <li>Acting</li>
+              <li>Video Games</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
