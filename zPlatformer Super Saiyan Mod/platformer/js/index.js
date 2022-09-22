@@ -5,7 +5,12 @@ $(document).ready(function () {
   let opspark = window.opspark,
     game = opspark.createGame(create, update),
     lives = 3;
-
+    if (gKey.isDown) {
+      lives = 100;
+    }
+    else {
+      lives = 3;
+    }
   function create() {
     game.opspark.init();
 
@@ -57,12 +62,12 @@ $(document).ready(function () {
     if (lives !== 0) {
       lives--;
       game.lives.text = "Lives " + lives;
-    } else {
-      setTimeout(
-        () =>
-          (game.lives.text = "Game Over Man! Game Over!"),
-        500
-      );
+    } 
+    else if (gKey.isDown) {
+      lives = 100;
+    }
+    else {
+      setTimeout(() => (game.lives.text = "Game Over Man! Game Over!"), 500);
     }
   }
 

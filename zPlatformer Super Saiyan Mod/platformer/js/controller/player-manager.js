@@ -17,6 +17,7 @@
     var dKey = game.input.keyboard.addKey(Phaser.Keyboard.D);
     var gKey = game.input.keyboard.addKey(Phaser.Keyboard.G);
     var hKey = game.input.keyboard.addKey(Phaser.Keyboard.H);
+    var oneKey = game.input.keyboard.addKey(Phaser.Keyboard.Q);
 
     function onDown() {}
 
@@ -52,7 +53,11 @@
       } else if (cursors.down.isDown || gKey.isDown) {
         asset.body.bounce.y = 0.8;
         asset.body.gravity.y = 450;
-      } else {
+        game.add.text(13, 110, "SUPER SAIYAN MODE: ACTIVATED");
+      } 
+      
+      }
+      else {
       }
 
       //  Allow the player to jump if they are touching the ground.
