@@ -54,11 +54,8 @@
         asset.body.bounce.y = 0.8;
         asset.body.gravity.y = 450;
         game.add.text(13, 110, "SUPER SAIYAN MODE: ACTIVATED");
-      } 
+      }
       
-      }
-      else {
-      }
 
       //  Allow the player to jump if they are touching the ground.
       if ((cursors.up.isDown || wKey.isDown) && asset.body.touching.down) {
