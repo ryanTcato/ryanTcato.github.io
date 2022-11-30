@@ -43,10 +43,7 @@ var init = function (window) {
     function update() {
       
  
-game.checkCirclePosition(circles[1]);
-game.checkCirclePosition(circles[2]);
-game.checkCirclePosition(circles[3]);
-game.checkCirclePosition(circles[4]);
+
       // TODO 9 : Iterate over the array
       for (var i = 0; i < circles.length; i++) {
               var eachCircle = circles[i];
